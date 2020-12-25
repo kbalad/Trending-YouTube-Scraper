@@ -12,6 +12,8 @@ In order to use this script, you will need a valid API key for the YouTube Data 
 
 Once you have the key, put it inside a text file named `api_key.txt` in the same directory as the script, or if it's not in the same directory you can target it with the `--key_path` parameter.
 
+After the first run it may not work becuase created API key is not activated for YouTube. Just enter the url by-hand in browser (e.g. https://www.googleapis.com/youtube/v3/videos?part=id,statistics,snippet&chart=mostPopular&regionCode=US&maxResults=50&key=<YOUR_API_KEY>) and follow the link in response.
+
 ### Modules
 
 The only module needed that is not in the standard library is the `requests` module.
